@@ -1,0 +1,25 @@
+//Question:
+/*given a array, even index will add, odd index will substract, return the total.
+ex: array[] = [1,2,3]
+1-2+3 = 2*/
+
+public class MyClass {
+    public static void main(String args[]) {
+        int arr[]={1,2,3,6,7,4,2};
+        int i=arr.length;
+        int n,sum=0,odd=0,even=0;
+    for(n=0;n<i;n++){
+        if(n%2==0){
+            even=even+arr[n];
+        }
+        else if (n%2 ==1){
+            odd=odd+arr[n];
+        }
+    }
+    
+    sum=even-odd;
+    System.out.print("\nThe total sum is ");
+    System.out.print(sum);
+      
+    }
+}
